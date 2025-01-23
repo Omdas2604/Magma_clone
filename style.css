@@ -259,6 +259,18 @@ color: white;
 
 }
 
+#page7-cir-inner h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2vw;
+}
+
+#page7-cir-inner h3::after {
+  content: '%';
+}
 
 #page8{
     position: relative;
@@ -556,5 +568,20 @@ color: white;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-
+    top: 0;
+    bottom: auto;
+}
+#page7-cir-inner h3 {
+    transition: transform 0.5s ease;
+    transform: translateY(-50%) scale(1.5);
+}
+#page7-cir-inner h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+    z-index: 9999;
 }

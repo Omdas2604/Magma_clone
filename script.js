@@ -650,3 +650,16 @@ function canvas2(){
     },
     backgroundColor:`#0a3bce91`,
   })
+
+  gsap.to("#page7-cir-inner h3", {
+    scrollTrigger: {
+      trigger: `#page7-cir-inner`,
+      start: `top center`,
+      end: `bottom top`,
+      scroller: `#main`,
+      scrub: 0.5
+    },
+    innerText: 100,
+    snap: "innerText",
+    duration: 5
+  })
